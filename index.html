@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cyberbullying Detector</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="icon">🛡️</div>
+			<h1>Cyberbullying Detector</h1>
+			<p>Analyze comments in real-time to identify toxic or harmful content</p>
+		</header>
+		<main>
+			<label for="comment">Enter a comment</label>
+			<textarea id="comment" placeholder="Type your comment here..."></textarea>
+			<div class="button-group">
+				<button id="analyze">Analyze</button>
+				<button id="visual-analysis">Visual Analysis</button>
+				<button id="security-analysis">Security Analysis</button>
+			</div>
+			<div id="result" class="result hidden">
+				<span id="label" class="badge">—</span>
+				<span id="confidence">—</span>
+			</div>
+			<div class="legend">
+				<span>🟢 non-toxic (< 0.4)</span>
+				<span>🟠 mild (0.4–0.7)</span>
+				<span>🔴 toxic (> 0.7)</span>
+			</div>
+			<div id="visual-results" class="visual-analysis hidden">
+				<h3>Detailed Analysis</h3>
+				<div id="analysis-content"></div>
+			</div>
+			<div id="security-results" class="security-analysis hidden">
+				<h3>Security Threat Analysis</h3>
+				<div id="security-content"></div>
+			</div>
+
+			<div class="divider"></div>
+
+			<label for="yt-url">YouTube video URL (coming soon)</label>
+			<input id="yt-url" type="text" placeholder="https://www.youtube.com/watch?v=VIDEO_ID" disabled />
+			<button id="analyze-yt" disabled>Analyze Video Comments</button>
+		</main>
+		<footer>
+			<small>Developed as a Mini Project • Powered by Transformers</small>
+		</footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

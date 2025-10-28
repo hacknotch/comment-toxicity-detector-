@@ -1,0 +1,61 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# --- Environments & Secrets ---
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# --- Model artifacts (large) ---
+model/
+checkpoints/
+outputs/
+runs/
+*.bin
+*.safetensors
+*.pt
+*.onnx
+*.h5
+
+# --- Datasets (often large/private) ---
+data/
+*.csv
+
+# --- Logs ---
+logs/
+*.log
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- OS files ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Node / Web build (if any) ---
+node_modules/
+dist/
+build/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# To include a specific CSV, remove '*.csv' above and add exceptions like:
+# !data/sample.csv
